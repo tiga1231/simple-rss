@@ -11,10 +11,13 @@ def parse_rss(url: str):
     print(f"Feed title: {feed.feed.get('title', 'Untitled')}\n")
 
     for entry in feed.entries:
-        print("Title:", entry.get("title", "No title"), end="\n-------\n")
-        print("Link:", entry.get("link", "No link"), end="\n-------\n")
-        print("Published:", entry.get("published", "No date"), end="\n-------\n")
-        print("Summary:", entry.get("summary", "No summary")[:300], end="\n-------\n")
+        # print(entry.keys())
+        # break
+        print("Title:", entry.get("title", "No title"))
+        print("-" * 3)
+        print("Link:", entry.get("link", "No link"))
+        print("Published:", entry.get("published", "No date"))
+        print("Summary:", entry.get("summary", "No summary"))
         print("=" * 80)
 
 
