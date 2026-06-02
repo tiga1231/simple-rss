@@ -18,7 +18,7 @@ def parse_rss(url: str):
         print("Link:", entry.get("link", "No link"))
         print("Published:", entry.get("published", "No date"))
         print("Summary:", entry.get("summary", "No summary"))
-        print("=" * 80)
+        print()
 
 
 if __name__ == "__main__":
